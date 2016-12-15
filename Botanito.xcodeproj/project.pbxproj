@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97C885FA1E033CAE00B9C895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C885F91E033CAE00B9C895 /* AppDelegate.swift */; };
-		97C885FC1E033CAE00B9C895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C885FB1E033CAE00B9C895 /* ViewController.swift */; };
-		97C885FF1E033CAE00B9C895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C885FD1E033CAE00B9C895 /* Main.storyboard */; };
-		97C886011E033CAE00B9C895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C886001E033CAE00B9C895 /* Assets.xcassets */; };
-		97C886041E033CAE00B9C895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C886021E033CAE00B9C895 /* LaunchScreen.storyboard */; };
+		89E00891D3C20924EECCBC77 /* Pods_Botanito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */; };
+		975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4CE1E0341EE006FA9EB /* Assets.xcassets */; };
+		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
+		975BE4DC1E0341EE006FA9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4D21E0341EE006FA9EB /* LaunchScreen.storyboard */; };
+		975BE4DD1E0341EE006FA9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4D41E0341EE006FA9EB /* Main.storyboard */; };
+		975BE4DE1E0341EE006FA9EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* ViewController.swift */; };
+		975BE4DF1E0341EE006FA9EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4D81E0341EE006FA9EB /* GoogleService-Info.plist */; };
+		975BE4E31E034358006FA9EB /* GoogleKey in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4E21E034358006FA9EB /* GoogleKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38C12B3ECC5B7C15AE1501DD /* Pods-Botanito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Botanito/Pods-Botanito.debug.xcconfig"; sourceTree = "<group>"; };
+		5178BD676CB0F8CCD05CD8FB /* Pods-Botanito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Botanito/Pods-Botanito.release.xcconfig"; sourceTree = "<group>"; };
+		8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9758C71F1E0345AD00EF7864 /* Botanito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Botanito.entitlements; sourceTree = "<group>"; };
+		975BE4CE1E0341EE006FA9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		975BE4D01E0341EE006FA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		975BE4D31E0341EE006FA9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		975BE4D51E0341EE006FA9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		975BE4D61E0341EE006FA9EB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		975BE4D81E0341EE006FA9EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		975BE4D91E0341EE006FA9EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975BE4E21E034358006FA9EB /* GoogleKey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleKey; sourceTree = "<group>"; };
 		97C885F61E033CAE00B9C895 /* Botanito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botanito.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		97C885F91E033CAE00B9C895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97C885FB1E033CAE00B9C895 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97C885FE1E033CAE00B9C895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		97C886001E033CAE00B9C895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		97C886031E033CAE00B9C895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		97C886051E033CAE00B9C895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E00891D3C20924EECCBC77 /* Pods_Botanito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70822C131506FC5C21F4A3C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38C12B3ECC5B7C15AE1501DD /* Pods-Botanito.debug.xcconfig */,
+				5178BD676CB0F8CCD05CD8FB /* Pods-Botanito.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		975BE4CD1E0341EE006FA9EB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				975BE4CE1E0341EE006FA9EB /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		975BE4CF1E0341EE006FA9EB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				975BE4D01E0341EE006FA9EB /* AppDelegate.swift */,
+				975BE4D11E0341EE006FA9EB /* screen */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		975BE4D11E0341EE006FA9EB /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				975BE4D21E0341EE006FA9EB /* LaunchScreen.storyboard */,
+				975BE4D41E0341EE006FA9EB /* Main.storyboard */,
+				975BE4D61E0341EE006FA9EB /* ViewController.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		975BE4D71E0341EE006FA9EB /* supported */ = {
+			isa = PBXGroup;
+			children = (
+				975BE4E21E034358006FA9EB /* GoogleKey */,
+				975BE4D81E0341EE006FA9EB /* GoogleService-Info.plist */,
+				975BE4D91E0341EE006FA9EB /* Info.plist */,
+			);
+			path = supported;
+			sourceTree = "<group>";
+		};
 		97C885ED1E033CAE00B9C895 = {
 			isa = PBXGroup;
 			children = (
 				97C885F81E033CAE00B9C895 /* Botanito */,
 				97C885F71E033CAE00B9C895 /* Products */,
+				70822C131506FC5C21F4A3C9 /* Pods */,
+				DB17BF9A63DC2ACC2F0FEED6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +112,20 @@
 		97C885F81E033CAE00B9C895 /* Botanito */ = {
 			isa = PBXGroup;
 			children = (
-				97C885F91E033CAE00B9C895 /* AppDelegate.swift */,
-				97C885FB1E033CAE00B9C895 /* ViewController.swift */,
-				97C885FD1E033CAE00B9C895 /* Main.storyboard */,
-				97C886001E033CAE00B9C895 /* Assets.xcassets */,
-				97C886021E033CAE00B9C895 /* LaunchScreen.storyboard */,
-				97C886051E033CAE00B9C895 /* Info.plist */,
+				9758C71F1E0345AD00EF7864 /* Botanito.entitlements */,
+				975BE4CD1E0341EE006FA9EB /* resources */,
+				975BE4CF1E0341EE006FA9EB /* src */,
+				975BE4D71E0341EE006FA9EB /* supported */,
 			);
 			path = Botanito;
+			sourceTree = "<group>";
+		};
+		DB17BF9A63DC2ACC2F0FEED6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C886081E033CAE00B9C895 /* Build configuration list for PBXNativeTarget "Botanito" */;
 			buildPhases = (
+				A7F412C69A49481728F8C870 /* [CP] Check Pods Manifest.lock */,
 				97C885F21E033CAE00B9C895 /* Sources */,
 				97C885F31E033CAE00B9C895 /* Frameworks */,
 				97C885F41E033CAE00B9C895 /* Resources */,
+				0B81511A9DD4ABDDBDA54F83 /* [CP] Embed Pods Frameworks */,
+				37EC321793ED99A6CAD14A27 /* [CP] Copy Pods Resources */,
+				975BE4E11E0342FB006FA9EB /* FireBase dSym */,
 			);
 			buildRules = (
 			);
@@ -98,6 +166,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7HM24R77UV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,41 +197,105 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C886041E033CAE00B9C895 /* LaunchScreen.storyboard in Resources */,
-				97C886011E033CAE00B9C895 /* Assets.xcassets in Resources */,
-				97C885FF1E033CAE00B9C895 /* Main.storyboard in Resources */,
+				975BE4DD1E0341EE006FA9EB /* Main.storyboard in Resources */,
+				975BE4E31E034358006FA9EB /* GoogleKey in Resources */,
+				975BE4DF1E0341EE006FA9EB /* GoogleService-Info.plist in Resources */,
+				975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */,
+				975BE4DC1E0341EE006FA9EB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B81511A9DD4ABDDBDA54F83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Botanito/Pods-Botanito-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37EC321793ED99A6CAD14A27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Botanito/Pods-Botanito-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975BE4E11E0342FB006FA9EB /* FireBase dSym */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "FireBase dSym";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:785115476344:ios:02873d282729f366\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"/Users/Motor/Desktop/Botanito/Botanito/supported/GoogleKey\"";
+		};
+		A7F412C69A49481728F8C870 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97C885F21E033CAE00B9C895 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C885FC1E033CAE00B9C895 /* ViewController.swift in Sources */,
-				97C885FA1E033CAE00B9C895 /* AppDelegate.swift in Sources */,
+				975BE4DE1E0341EE006FA9EB /* ViewController.swift in Sources */,
+				975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		97C885FD1E033CAE00B9C895 /* Main.storyboard */ = {
+		975BE4D21E0341EE006FA9EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				97C885FE1E033CAE00B9C895 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		97C886021E033CAE00B9C895 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97C886031E033CAE00B9C895 /* Base */,
+				975BE4D31E0341EE006FA9EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		975BE4D41E0341EE006FA9EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975BE4D51E0341EE006FA9EB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,13 +396,15 @@
 		};
 		97C886091E033CAE00B9C895 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C12B3ECC5B7C15AE1501DD /* Pods-Botanito.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Botanito/Botanito.entitlements;
 				DEVELOPMENT_TEAM = 7HM24R77UV;
-				INFOPLIST_FILE = Botanito/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Botanito/supported/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mao.botanito.Botanito;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mao.Botanito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -274,13 +413,15 @@
 		};
 		97C8860A1E033CAE00B9C895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5178BD676CB0F8CCD05CD8FB /* Pods-Botanito.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Botanito/Botanito.entitlements;
 				DEVELOPMENT_TEAM = 7HM24R77UV;
-				INFOPLIST_FILE = Botanito/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Botanito/supported/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mao.botanito.Botanito;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mao.Botanito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -306,6 +447,7 @@
 				97C8860A1E033CAE00B9C895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

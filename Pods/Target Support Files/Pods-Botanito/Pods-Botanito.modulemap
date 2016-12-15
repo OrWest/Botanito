@@ -1,0 +1,6 @@
+framework module Pods_Botanito {
+  umbrella header "Pods-Botanito-umbrella.h"
+
+  export *
+  module * { export * }
+}
