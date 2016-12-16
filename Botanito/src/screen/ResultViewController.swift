@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  ResultViewController.swift
 //  Botanito
 //
 //  Created by Alex Motor on 16.12.16.
@@ -8,18 +8,22 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    @IBAction func finishAction() {
+        _ = navigationController?.popToRootViewController(animated: true)
+    }
 
 }
-

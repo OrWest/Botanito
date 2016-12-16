@@ -15,6 +15,11 @@
 		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
 		975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* MainViewController.swift */; };
 		975BE4E31E034358006FA9EB /* GoogleKey in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4E21E034358006FA9EB /* GoogleKey */; };
+		97FA12041E0438C000ED5493 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12031E0438C000ED5493 /* MenuViewController.swift */; };
+		97FA12081E043C1400ED5493 /* FormulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12071E043C1400ED5493 /* FormulViewController.swift */; };
+		97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12091E04406500ED5493 /* BaseViewController.swift */; };
+		97FA120C1E04439700ED5493 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA120B1E04439700ED5493 /* ResultViewController.swift */; };
+		97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		975BE4D91E0341EE006FA9EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		975BE4E21E034358006FA9EB /* GoogleKey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleKey; sourceTree = "<group>"; };
 		97C885F61E033CAE00B9C895 /* Botanito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botanito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FA12031E0438C000ED5493 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		97FA12071E043C1400ED5493 /* FormulViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulViewController.swift; sourceTree = "<group>"; };
+		97FA12091E04406500ED5493 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		97FA120B1E04439700ED5493 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +85,12 @@
 		975BE4D11E0341EE006FA9EB /* screen */ = {
 			isa = PBXGroup;
 			children = (
+				97FA12091E04406500ED5493 /* BaseViewController.swift */,
 				975BE4D61E0341EE006FA9EB /* MainViewController.swift */,
+				97FA12031E0438C000ED5493 /* MenuViewController.swift */,
+				97FA12071E043C1400ED5493 /* FormulViewController.swift */,
+				97FA120B1E04439700ED5493 /* ResultViewController.swift */,
+				97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */,
 			);
 			path = screen;
 			sourceTree = "<group>";
@@ -249,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:785115476344:ios:02873d282729f366\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/Botanito/supported/GoogleKey\"";
+			shellScript = "exit;\nGOOGLE_APP_ID=1:785115476344:ios:02873d282729f366\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/Botanito/supported/GoogleKey\"";
 		};
 		A7F412C69A49481728F8C870 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -273,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */,
+				97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */,
 				975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */,
+				97FA12081E043C1400ED5493 /* FormulViewController.swift in Sources */,
+				97FA12041E0438C000ED5493 /* MenuViewController.swift in Sources */,
 				975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */,
+				97FA120C1E04439700ED5493 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
