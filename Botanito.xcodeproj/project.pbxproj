@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575B05D11E0414F50098828A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575B05CF1E0414F50098828A /* LaunchScreen.storyboard */; };
 		89E00891D3C20924EECCBC77 /* Pods_Botanito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */; };
 		975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4CE1E0341EE006FA9EB /* Assets.xcassets */; };
 		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
-		975BE4DC1E0341EE006FA9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4D21E0341EE006FA9EB /* LaunchScreen.storyboard */; };
 		975BE4DD1E0341EE006FA9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4D41E0341EE006FA9EB /* Main.storyboard */; };
 		975BE4DE1E0341EE006FA9EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* ViewController.swift */; };
 		975BE4DF1E0341EE006FA9EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4D81E0341EE006FA9EB /* GoogleService-Info.plist */; };
@@ -20,11 +20,11 @@
 /* Begin PBXFileReference section */
 		38C12B3ECC5B7C15AE1501DD /* Pods-Botanito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Botanito/Pods-Botanito.debug.xcconfig"; sourceTree = "<group>"; };
 		5178BD676CB0F8CCD05CD8FB /* Pods-Botanito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Botanito/Pods-Botanito.release.xcconfig"; sourceTree = "<group>"; };
+		575B05D01E0414F50098828A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758C71F1E0345AD00EF7864 /* Botanito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Botanito.entitlements; sourceTree = "<group>"; };
 		975BE4CE1E0341EE006FA9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975BE4D01E0341EE006FA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		975BE4D31E0341EE006FA9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		975BE4D51E0341EE006FA9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		975BE4D61E0341EE006FA9EB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		975BE4D81E0341EE006FA9EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 		975BE4D11E0341EE006FA9EB /* screen */ = {
 			isa = PBXGroup;
 			children = (
-				975BE4D21E0341EE006FA9EB /* LaunchScreen.storyboard */,
 				975BE4D41E0341EE006FA9EB /* Main.storyboard */,
 				975BE4D61E0341EE006FA9EB /* ViewController.swift */,
 			);
@@ -113,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				9758C71F1E0345AD00EF7864 /* Botanito.entitlements */,
+				575B05CF1E0414F50098828A /* LaunchScreen.storyboard */,
 				975BE4CD1E0341EE006FA9EB /* resources */,
 				975BE4CF1E0341EE006FA9EB /* src */,
 				975BE4D71E0341EE006FA9EB /* supported */,
@@ -200,8 +200,8 @@
 				975BE4DD1E0341EE006FA9EB /* Main.storyboard in Resources */,
 				975BE4E31E034358006FA9EB /* GoogleKey in Resources */,
 				975BE4DF1E0341EE006FA9EB /* GoogleService-Info.plist in Resources */,
+				575B05D11E0414F50098828A /* LaunchScreen.storyboard in Resources */,
 				975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */,
-				975BE4DC1E0341EE006FA9EB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +282,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		975BE4D21E0341EE006FA9EB /* LaunchScreen.storyboard */ = {
+		575B05CF1E0414F50098828A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				975BE4D31E0341EE006FA9EB /* Base */,
+				575B05D01E0414F50098828A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
