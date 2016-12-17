@@ -13,10 +13,16 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var dataManager: DataManager!
+    static let shared: AppDelegate = {
+        return UIApplication.shared.delegate as! AppDelegate
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         FIRApp.configure()
+        dataManager = DataManager()
+        
         return true
     }
 }

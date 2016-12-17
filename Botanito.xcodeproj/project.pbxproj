@@ -20,6 +20,8 @@
 		97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12091E04406500ED5493 /* BaseViewController.swift */; };
 		97FA120C1E04439700ED5493 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA120B1E04439700ED5493 /* ResultViewController.swift */; };
 		97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */; };
+		97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB00C11E0533EF00D2F4B3 /* DataManager.swift */; };
+		97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB00C51E053A0700D2F4B3 /* Family.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		97FA12091E04406500ED5493 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		97FA120B1E04439700ED5493 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		97FB00C11E0533EF00D2F4B3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		97FB00C51E053A0700D2F4B3 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				975BE4D01E0341EE006FA9EB /* AppDelegate.swift */,
 				575B05D81E041CA80098828A /* Main.storyboard */,
+				97FB00C31E0539FE00D2F4B3 /* data */,
+				97FB00C01E0533D700D2F4B3 /* manager */,
 				975BE4D11E0341EE006FA9EB /* screen */,
 			);
 			path = src;
@@ -135,6 +141,30 @@
 			path = Botanito;
 			sourceTree = "<group>";
 		};
+		97FB00C01E0533D700D2F4B3 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				97FB00C11E0533EF00D2F4B3 /* DataManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		97FB00C31E0539FE00D2F4B3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				97FB00C41E0539FE00D2F4B3 /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		97FB00C41E0539FE00D2F4B3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				97FB00C51E053A0700D2F4B3 /* Family.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		DB17BF9A63DC2ACC2F0FEED6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +209,7 @@
 				TargetAttributes = {
 					97C885F51E033CAE00B9C895 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7HM24R77UV;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -289,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */,
+				97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */,
+				97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */,
 				97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */,
 				975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */,
 				97FA12081E043C1400ED5493 /* FormulViewController.swift in Sources */,
@@ -338,6 +371,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,6 +422,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -419,7 +454,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Botanito/Botanito.entitlements;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7HM24R77UV;
 				INFOPLIST_FILE = "$(SRCROOT)/Botanito/supported/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -436,7 +472,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Botanito/Botanito.entitlements;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7HM24R77UV;
 				INFOPLIST_FILE = "$(SRCROOT)/Botanito/supported/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
