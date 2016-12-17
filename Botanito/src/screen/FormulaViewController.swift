@@ -8,8 +8,16 @@
 
 import UIKit
 
-class FormulViewController: BaseViewController {
+enum ChallengeType {
+    case Survival
+    case Infinity
+}
 
+class FormulaViewController: BaseViewController {
+
+    var challengeType: ChallengeType = .Survival
+    var challenge: [FormulaQuestion]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

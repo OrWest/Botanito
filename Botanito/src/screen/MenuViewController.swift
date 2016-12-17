@@ -9,15 +9,14 @@
 import UIKit
 
 class MenuViewController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func backAction() {
         _ = navigationController?.popViewController(animated: true)
     }
+
 
 }
