@@ -16,12 +16,19 @@ class FormulaViewController: BaseViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var finishButton: UIButton!
     
     private var currentQusetion: FormulaQuestion?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if challengeType == .Infinity {
+            scoreLabel.isHidden = true
+        } else {
+            finishButton.isHidden = true
+        }
+        
         prepareNextQuestion()
     }
 
@@ -32,9 +39,15 @@ class FormulaViewController: BaseViewController {
         _ = navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func finishButtonAction(_ sender: Any) {
+        finishChallenge()
+    }
+    
+    
     @IBAction func answerButtonAction(_ sender: UIButton) {
         let buttonIndex = answerButtons.index(of: sender)!
-
+        challenge!.answeredCount += 1
+        
         UIApplication.shared.beginIgnoringInteractionEvents()
         if buttonIndex == currentQusetion!.correctAnswerIndex {
             sender.backgroundColor = UIColor.green
@@ -69,10 +82,14 @@ class FormulaViewController: BaseViewController {
             print("Question prepared. \(question.text): correctAnwer = \(question.correctAnswerIndex)")
             currentQusetion = question
         } else {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "ResultController") as! ResultViewController
-            vc.challenge = challenge
-            navigationController!.pushViewController(vc, animated: true)
+            finishChallenge()
         }
+    }
+    
+    private func finishChallenge() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ResultController") as! ResultViewController
+        vc.challenge = challenge
+        navigationController!.pushViewController(vc, animated: true)
     }
     
 }

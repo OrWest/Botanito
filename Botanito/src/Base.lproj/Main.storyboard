@@ -125,7 +125,7 @@
                                     <action selector="backAction" destination="1Sd-LE-Wrf" eventType="touchUpInside" id="qim-EV-VVK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zid-x1-b8C">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zid-x1-b8C">
                                 <rect key="frame" x="234" y="814" width="300" height="60"/>
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.94117647059999998" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -530,10 +530,21 @@
                                     <action selector="backAction" destination="eFs-nO-N9z" eventType="touchUpInside" id="cB2-hg-4Ni"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVV-iE-wdK">
+                                <rect key="frame" x="594" y="77" width="154" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Завершить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishButtonAction:" destination="eFs-nO-N9z" eventType="touchUpInside" id="Pyl-YQ-xpv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="38K-eG-5fa" firstAttribute="top" secondItem="4Yn-9e-iSy" secondAttribute="bottom" id="2FD-PD-SBT"/>
+                            <constraint firstItem="sVV-iE-wdK" firstAttribute="trailing" secondItem="15h-cr-Brk" secondAttribute="trailingMargin" id="5mu-UX-DZJ"/>
                             <constraint firstItem="X6r-nP-tOu" firstAttribute="centerX" secondItem="15h-cr-Brk" secondAttribute="centerX" id="A15-VJ-guY"/>
                             <constraint firstAttribute="trailing" secondItem="o2W-kK-FhL" secondAttribute="trailing" id="A7d-5p-Bcm"/>
                             <constraint firstItem="XdJ-6o-ljO" firstAttribute="top" secondItem="ded-22-EJZ" secondAttribute="bottom" constant="8" id="JsY-nU-hmM"/>
@@ -550,10 +561,12 @@
                             <constraint firstItem="KSS-xE-6sT" firstAttribute="centerX" secondItem="15h-cr-Brk" secondAttribute="centerX" id="htk-6M-3R9"/>
                             <constraint firstItem="o2W-kK-FhL" firstAttribute="top" secondItem="15h-cr-Brk" secondAttribute="top" id="j3q-4h-QXR"/>
                             <constraint firstItem="XdJ-6o-ljO" firstAttribute="width" secondItem="XdJ-6o-ljO" secondAttribute="height" multiplier="1:1" id="tKc-Mr-UTp"/>
+                            <constraint firstItem="sVV-iE-wdK" firstAttribute="centerY" secondItem="XdJ-6o-ljO" secondAttribute="centerY" id="wjG-QU-OJJ"/>
                             <constraint firstItem="ded-22-EJZ" firstAttribute="top" secondItem="S41-7z-O16" secondAttribute="bottom" id="x1N-IQ-jMY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="finishButton" destination="sVV-iE-wdK" id="ufZ-o4-j5A"/>
                         <outlet property="questionLabel" destination="h0l-3r-BCl" id="c1o-UZ-ZfX"/>
                         <outlet property="scoreLabel" destination="ded-22-EJZ" id="IcM-7b-Q1w"/>
                         <outletCollection property="answerButtons" destination="ZU5-2b-621" collectionClass="NSMutableArray" id="5Id-EG-95d"/>

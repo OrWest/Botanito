@@ -15,10 +15,11 @@ enum ChallengeType {
 
 class Challenge: NSObject {
     var correctAnswered = 0
+    var answeredCount = 0
     let questionCount: Int
     var correctAnsweredInPrecent: Float {
         get {
-            return Float(correctAnswered) / Float(questionCount)
+            return Float(correctAnswered) / Float(answeredCount)
         }
     }
     var accepted: Bool {
@@ -31,11 +32,17 @@ class Challenge: NSObject {
     
     private let challengeType: ChallengeType
     private var questions: [FormulaQuestion]
+    private let families: [Family]
     
     
     required init(families: [Family], challengeType: ChallengeType) {
         self.challengeType = challengeType
-        questions = Challenge.prepareChallenge(families: families)
+        self.families = families
+        if challengeType == .Survival {
+            questions = Challenge.prepareChallenge(families: families)
+        } else {
+            questions = []
+        }
         questionCount = questions.count
         
         super.init()
@@ -44,12 +51,16 @@ class Challenge: NSObject {
     // MARK: - Public
     
     func nextQuestion() -> FormulaQuestion? {
-        let question = questions.first
-        if question != nil {
-            questions.remove(at: 0)
+        if challengeType == .Survival {
+            let question = questions.first
+            if question != nil {
+                questions.remove(at: 0)
+            }
+        
+            return question
+        } else {
+            return prepareRandomQuestion(families: families)
         }
-    
-        return question
     }
     
     
@@ -77,6 +88,26 @@ class Challenge: NSObject {
         }
         
         return questions
+    }
+    
+    private func prepareRandomQuestion(families: [Family]) -> FormulaQuestion {
+        let randomIndex = Int(arc4random_uniform(UInt32(families.count)))
+        let randomFamily = families[randomIndex]
+        
+        var tempFamilies = families
+        tempFamilies.remove(at: tempFamilies.index(of: randomFamily)!)
+        
+        let text = "Семейство \(randomFamily.name)"
+        var answers: [UIImage] = []
+        for _ in 0...2 {
+            let randomInt = Int(arc4random_uniform(UInt32(tempFamilies.count)))
+            let answerImage = tempFamilies[randomInt].image!
+            answers.append(answerImage)
+        }
+        let correctAnswerIndex = Int(arc4random_uniform(4))
+        answers.insert(randomFamily.image!, at: correctAnswerIndex)
+        
+        return FormulaQuestion(text: text, answers: answers, correctIndex: correctAnswerIndex)
     }
     
 }
