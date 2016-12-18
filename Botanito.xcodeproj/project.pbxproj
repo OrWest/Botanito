@@ -16,6 +16,8 @@
 		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
 		975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* MainViewController.swift */; };
 		975BE4E31E034358006FA9EB /* GoogleKey in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4E21E034358006FA9EB /* GoogleKey */; };
+		976DE3871E072CC40061241E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DE3861E072CC40061241E /* Challenge.swift */; };
+		976DE38A1E073B140061241E /* UIImage+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DE3891E073B140061241E /* UIImage+util.swift */; };
 		97C939971E055B1200876413 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C939961E055B1200876413 /* LaunchViewController.swift */; };
 		97C939991E055CCB00876413 /* FormulaMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C939981E055CCB00876413 /* FormulaMenuViewController.swift */; };
 		97FA12041E0438C000ED5493 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12031E0438C000ED5493 /* MenuViewController.swift */; };
@@ -41,6 +43,8 @@
 		975BE4D61E0341EE006FA9EB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		975BE4D91E0341EE006FA9EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		975BE4E21E034358006FA9EB /* GoogleKey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleKey; sourceTree = "<group>"; };
+		976DE3861E072CC40061241E /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		976DE3891E073B140061241E /* UIImage+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+util.swift"; sourceTree = "<group>"; };
 		97C885F61E033CAE00B9C895 /* Botanito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botanito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C939961E055B1200876413 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		97C939981E055CCB00876413 /* FormulaMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaMenuViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				97FB00C31E0539FE00D2F4B3 /* data */,
 				97FB00C01E0533D700D2F4B3 /* manager */,
 				975BE4D11E0341EE006FA9EB /* screen */,
+				976DE3881E073B090061241E /* util */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -117,6 +122,14 @@
 				975BE4D91E0341EE006FA9EB /* Info.plist */,
 			);
 			path = supported;
+			sourceTree = "<group>";
+		};
+		976DE3881E073B090061241E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				976DE3891E073B140061241E /* UIImage+util.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		97C885ED1E033CAE00B9C895 = {
@@ -170,6 +183,7 @@
 			children = (
 				97FB00C51E053A0700D2F4B3 /* Family.swift */,
 				971513891E055F3200CEB39D /* FormulaQuestion.swift */,
+				976DE3861E072CC40061241E /* Challenge.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -329,9 +343,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */,
+				976DE3871E072CC40061241E /* Challenge.swift in Sources */,
 				97C939971E055B1200876413 /* LaunchViewController.swift in Sources */,
 				9715138A1E055F3200CEB39D /* FormulaQuestion.swift in Sources */,
 				97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */,
+				976DE38A1E073B140061241E /* UIImage+util.swift in Sources */,
 				97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */,
 				97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */,
 				975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */,

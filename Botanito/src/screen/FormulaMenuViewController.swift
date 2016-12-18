@@ -32,7 +32,8 @@ class FormulaMenuViewController: BaseViewController {
             print("\(#file):\(#function): unknown segue identifier")
         }
         
-        let challenge = AppDelegate.shared.dataManager.prepareChallenge(challengeType: vc.challengeType)
+        let families = AppDelegate.shared.dataManager.families
+        let challenge = Challenge(families: families, challengeType: vc.challengeType)
         vc.challenge = challenge
     }
 

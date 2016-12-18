@@ -10,15 +10,18 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var challenge: Challenge?
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var correctAnswerCountLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let correctAnsweredPercent = Int(challenge!.correctAnsweredInPrecent * 100)
+        correctAnswerCountLabel.text = "\(correctAnsweredPercent) %"
+        resultLabel.text = challenge!.accepted ? "ТЕСТ ПРОЙДЕН!" : "ТЕСТ ПРОВАЛЕН!"
     }
     
 

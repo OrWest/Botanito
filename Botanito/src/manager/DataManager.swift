@@ -28,30 +28,6 @@ class DataManager: NSObject {
         loadFamilies(completion: completion)
     }
     
-    func prepareChallenge(challengeType: ChallengeType) -> [FormulaQuestion] {
-        var questions: [FormulaQuestion] = []
-        
-        for family in families {
-            var families = self.families
-            families.remove(at: families.index(of: family)!)
-            
-            let text = "Семейство \(family.name)"
-            var answers: [UIImage] = []
-            for _ in 0...2 {
-                let randomInt = Int(arc4random_uniform(UInt32(families.count)))
-                let answerImage = self.families[randomInt].image!
-                answers.append(answerImage)
-            }
-            let correctAnswerIndex = Int(arc4random_uniform(4))
-            answers.insert(family.image!, at: correctAnswerIndex)
-            
-            let question = FormulaQuestion(text: text, answers: answers, correctIndex: correctAnswerIndex)
-            questions.append(question)
-        }
-        
-        return questions
-    }
-    
     // MARK: - Private
     
     private func loadFamilies(completion: @escaping () -> ()) {
