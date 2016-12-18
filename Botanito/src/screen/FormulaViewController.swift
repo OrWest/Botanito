@@ -46,12 +46,10 @@ class FormulaViewController: BaseViewController {
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
         let buttonIndex = answerButtons.index(of: sender)!
-        challenge!.answeredCount += 1
         
         UIApplication.shared.beginIgnoringInteractionEvents()
-        if buttonIndex == currentQusetion!.correctAnswerIndex {
+        if challenge!.answer(question: currentQusetion!, answerIndex: buttonIndex) {
             sender.backgroundColor = UIColor.green
-            challenge!.correctAnswered += 1
         } else {
             let correctButton = answerButtons[currentQusetion!.correctAnswerIndex]
             correctButton.backgroundColor = UIColor.green
@@ -79,7 +77,7 @@ class FormulaViewController: BaseViewController {
                 button.backgroundColor = #colorLiteral(red: 0.6666666667, green: 0.9411764706, blue: 0.8196078431, alpha: 1)
             }
             
-            print("Question prepared. \(question.text): correctAnwer = \(question.correctAnswerIndex)")
+            print("CorrectAnwer = \(question.correctAnswerIndex) \(question.text): ")
             currentQusetion = question
         } else {
             finishChallenge()

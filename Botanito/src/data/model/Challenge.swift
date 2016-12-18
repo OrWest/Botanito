@@ -52,15 +52,25 @@ class Challenge: NSObject {
     
     func nextQuestion() -> FormulaQuestion? {
         if challengeType == .Survival {
-            let question = questions.first
-            if question != nil {
-                questions.remove(at: 0)
-            }
-        
-            return question
+            return questions.first
         } else {
             return prepareRandomQuestion(families: families)
         }
+    }
+    
+    func answer(question: FormulaQuestion, answerIndex: Int) -> Bool {
+        answeredCount += 1
+        
+        var correct = false
+        if question.correctAnswerIndex == answerIndex {
+            correct = true
+            correctAnswered += 1
+        }
+        if challengeType == .Survival {
+            questions.remove(at: questions.index(of: question)!)
+        }
+        
+        return correct
     }
     
     
