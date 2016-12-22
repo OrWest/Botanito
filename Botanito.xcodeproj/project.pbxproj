@@ -12,6 +12,8 @@
 		575B05DA1E041CA80098828A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575B05D81E041CA80098828A /* Main.storyboard */; };
 		89E00891D3C20924EECCBC77 /* Pods_Botanito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */; };
 		9715138A1E055F3200CEB39D /* FormulaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971513891E055F3200CEB39D /* FormulaQuestion.swift */; };
+		971CE62C1E0C710100155787 /* FormulaAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62B1E0C710100155787 /* FormulaAnswer.swift */; };
+		971CE62E1E0C75B400155787 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */; };
 		975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4CE1E0341EE006FA9EB /* Assets.xcassets */; };
 		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
 		975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* MainViewController.swift */; };
@@ -26,7 +28,6 @@
 		97FA12081E043C1400ED5493 /* FormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12071E043C1400ED5493 /* FormulaViewController.swift */; };
 		97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12091E04406500ED5493 /* BaseViewController.swift */; };
 		97FA120C1E04439700ED5493 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA120B1E04439700ED5493 /* ResultViewController.swift */; };
-		97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */; };
 		97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB00C11E0533EF00D2F4B3 /* DataManager.swift */; };
 		97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB00C51E053A0700D2F4B3 /* Family.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,8 @@
 		575B05D91E041CA80098828A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B8D0C22338AD81C8CF32E0D /* Pods_Botanito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		971513891E055F3200CEB39D /* FormulaQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaQuestion.swift; sourceTree = "<group>"; };
+		971CE62B1E0C710100155787 /* FormulaAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaAnswer.swift; sourceTree = "<group>"; };
+		971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		9758C71F1E0345AD00EF7864 /* Botanito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Botanito.entitlements; sourceTree = "<group>"; };
 		975BE4CE1E0341EE006FA9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975BE4D01E0341EE006FA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 		97FA12071E043C1400ED5493 /* FormulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaViewController.swift; sourceTree = "<group>"; };
 		97FA12091E04406500ED5493 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		97FA120B1E04439700ED5493 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		97FB00C11E0533EF00D2F4B3 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		97FB00C51E053A0700D2F4B3 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +115,7 @@
 				97C939981E055CCB00876413 /* FormulaMenuViewController.swift */,
 				97FA12071E043C1400ED5493 /* FormulaViewController.swift */,
 				97FA120B1E04439700ED5493 /* ResultViewController.swift */,
-				97FA120D1E0446C000ED5493 /* LeaderboardViewController.swift */,
+				971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */,
 			);
 			path = screen;
 			sourceTree = "<group>";
@@ -188,6 +190,7 @@
 			children = (
 				97FB00C51E053A0700D2F4B3 /* Family.swift */,
 				971513891E055F3200CEB39D /* FormulaQuestion.swift */,
+				971CE62B1E0C710100155787 /* FormulaAnswer.swift */,
 				976DE3861E072CC40061241E /* Challenge.swift */,
 				97CC220A1E0B2821001A6F42 /* Flower.swift */,
 			);
@@ -348,11 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */,
 				976DE3871E072CC40061241E /* Challenge.swift in Sources */,
 				97CC220B1E0B2821001A6F42 /* Flower.swift in Sources */,
 				97C939971E055B1200876413 /* LaunchViewController.swift in Sources */,
 				9715138A1E055F3200CEB39D /* FormulaQuestion.swift in Sources */,
+				971CE62C1E0C710100155787 /* FormulaAnswer.swift in Sources */,
 				97CC220D1E0B29F5001A6F42 /* Array+shuffle.swift in Sources */,
 				97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */,
 				976DE38A1E073B140061241E /* UIImage+util.swift in Sources */,
@@ -360,6 +363,7 @@
 				97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */,
 				975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */,
 				97FA12081E043C1400ED5493 /* FormulaViewController.swift in Sources */,
+				971CE62E1E0C75B400155787 /* AnswerTableViewCell.swift in Sources */,
 				97FA12041E0438C000ED5493 /* MenuViewController.swift in Sources */,
 				975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */,
 				97FA120C1E04439700ED5493 /* ResultViewController.swift in Sources */,

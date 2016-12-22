@@ -27,8 +27,11 @@ class Family: NSObject {
             }
         }
         super.init()
-        
-        // 1 MB
+     
+        loadImages(storageRef: storageRef)
+    }
+    
+    private func loadImages(storageRef: FIRStorageReference) {
         if let types = types {
             for type in types {
                 typeImages = [:]

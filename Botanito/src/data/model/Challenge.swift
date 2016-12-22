@@ -17,6 +17,8 @@ class Challenge: NSObject {
     var correctAnswered = 0
     var answeredCount = 0
     let questionCount: Int
+    var answers: [FormulaAnswer]
+
     var correctAnsweredInPrecent: Float {
         get {
             return Float(correctAnswered) / Float(answeredCount)
@@ -44,6 +46,7 @@ class Challenge: NSObject {
             questions = []
         }
         questionCount = questions.count
+        answers = []
         
         super.init()
     }
@@ -69,6 +72,7 @@ class Challenge: NSObject {
         if challengeType == .Survival {
             questions.remove(at: questions.index(of: question)!)
         }
+        answers.append(FormulaAnswer(question: question, answeredIndex: answerIndex))
         
         return correct
     }
