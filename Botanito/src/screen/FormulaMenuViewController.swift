@@ -36,5 +36,4 @@ class FormulaMenuViewController: BaseViewController {
         let challenge = Challenge(families: families, challengeType: vc.challengeType)
         vc.challenge = challenge
     }
-
 }

@@ -20,6 +20,8 @@
 		976DE38A1E073B140061241E /* UIImage+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DE3891E073B140061241E /* UIImage+util.swift */; };
 		97C939971E055B1200876413 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C939961E055B1200876413 /* LaunchViewController.swift */; };
 		97C939991E055CCB00876413 /* FormulaMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C939981E055CCB00876413 /* FormulaMenuViewController.swift */; };
+		97CC220B1E0B2821001A6F42 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CC220A1E0B2821001A6F42 /* Flower.swift */; };
+		97CC220D1E0B29F5001A6F42 /* Array+shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CC220C1E0B29F5001A6F42 /* Array+shuffle.swift */; };
 		97FA12041E0438C000ED5493 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12031E0438C000ED5493 /* MenuViewController.swift */; };
 		97FA12081E043C1400ED5493 /* FormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12071E043C1400ED5493 /* FormulaViewController.swift */; };
 		97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA12091E04406500ED5493 /* BaseViewController.swift */; };
@@ -48,6 +50,8 @@
 		97C885F61E033CAE00B9C895 /* Botanito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botanito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C939961E055B1200876413 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		97C939981E055CCB00876413 /* FormulaMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaMenuViewController.swift; sourceTree = "<group>"; };
+		97CC220A1E0B2821001A6F42 /* Flower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		97CC220C1E0B29F5001A6F42 /* Array+shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+shuffle.swift"; sourceTree = "<group>"; };
 		97FA12031E0438C000ED5493 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		97FA12071E043C1400ED5493 /* FormulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaViewController.swift; sourceTree = "<group>"; };
 		97FA12091E04406500ED5493 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				976DE3891E073B140061241E /* UIImage+util.swift */,
+				97CC220C1E0B29F5001A6F42 /* Array+shuffle.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				97FB00C51E053A0700D2F4B3 /* Family.swift */,
 				971513891E055F3200CEB39D /* FormulaQuestion.swift */,
 				976DE3861E072CC40061241E /* Challenge.swift */,
+				97CC220A1E0B2821001A6F42 /* Flower.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 			files = (
 				97FA120E1E0446C000ED5493 /* LeaderboardViewController.swift in Sources */,
 				976DE3871E072CC40061241E /* Challenge.swift in Sources */,
+				97CC220B1E0B2821001A6F42 /* Flower.swift in Sources */,
 				97C939971E055B1200876413 /* LaunchViewController.swift in Sources */,
 				9715138A1E055F3200CEB39D /* FormulaQuestion.swift in Sources */,
+				97CC220D1E0B29F5001A6F42 /* Array+shuffle.swift in Sources */,
 				97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */,
 				976DE38A1E073B140061241E /* UIImage+util.swift in Sources */,
 				97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */,

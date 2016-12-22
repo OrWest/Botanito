@@ -31,6 +31,16 @@ class DataManager: NSObject {
     // MARK: - Private
     
     private func loadFamilies(completion: @escaping () -> ()) {
+        dataBase.reference().child("flowers").observe(.value, with: { [weak self] snapshot in
+            guard self != nil else {
+                return
+            }
+            for flowerModel in snapshot.children {
+                let snap = flowerModel as! FIRDataSnapshot
+                let flower = Flower(snap: snap,storageRef: self!.storage.reference(withPath: "Formula"))
+                self!.families.append(flower)
+            }
+        })
         dataBase.reference().child("families").observe(.value, with: { [weak self] snapshot in
             guard self != nil else {
                 return

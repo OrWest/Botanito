@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FormulaViewController: BaseViewController {
+class FormulaViewController: BaseViewController, UIGestureRecognizerDelegate {
 
     var challengeType: ChallengeType = .Survival
     var challenge: Challenge?
@@ -17,6 +17,7 @@ class FormulaViewController: BaseViewController {
     @IBOutlet var answerButtons: [UIButton]!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var finishButton: UIButton!
+    @IBOutlet weak var tapView: UIView!
     
     private var currentQusetion: FormulaQuestion?
     
@@ -47,7 +48,6 @@ class FormulaViewController: BaseViewController {
     @IBAction func answerButtonAction(_ sender: UIButton) {
         let buttonIndex = answerButtons.index(of: sender)!
         
-        UIApplication.shared.beginIgnoringInteractionEvents()
         if challenge!.answer(question: currentQusetion!, answerIndex: buttonIndex) {
             sender.backgroundColor = UIColor.green
         } else {
@@ -56,17 +56,21 @@ class FormulaViewController: BaseViewController {
             sender.backgroundColor = UIColor.red
         }
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1), execute: { [weak self] in
-            UIApplication.shared.endIgnoringInteractionEvents()
-            self?.prepareNextQuestion()
-        })
+        view.bringSubview(toFront: tapView)
     }
+    
+    @objc
+    @IBAction func tapViewTapAction(_ sender: UITapGestureRecognizer) {
+        prepareNextQuestion()
+        view.sendSubview(toBack: tapView)
+    }
+    
     
     
     // MARK: - Private
     
     private func prepareNextQuestion() {
-        scoreLabel.text = "\(challenge!.correctAnswered)/\(challenge!.questionCount)"
+        scoreLabel.text = "\(challenge!.answeredCount)/\(challenge!.questionCount)"
         
         if let question = challenge!.nextQuestion() {
             questionLabel.text = question.text
@@ -88,6 +92,14 @@ class FormulaViewController: BaseViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ResultController") as! ResultViewController
         vc.challenge = challenge
         navigationController!.pushViewController(vc, animated: true)
+    }
+    
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
     
 }
