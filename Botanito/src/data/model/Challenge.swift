@@ -115,8 +115,8 @@ class Challenge: NSObject {
                     if let types = randomFamily.types {
                         let randomTypeInt = Int(arc4random_uniform(UInt32(types.count)))
                         let randomType = types[randomTypeInt]
-                        guard let randomFormila = randomFamily.typeImages![randomType] else { continue }
-                        answers.append(randomFormila)
+                        guard let randomFormula = randomFamily.typeImages![randomType] else { continue }
+                        answers.append(randomFormula)
                     } else {
                         guard let answerImage = randomFamily.image else { continue }
                         answers.append(answerImage)
@@ -151,9 +151,9 @@ class Challenge: NSObject {
                 text.append(" \(randomType)")
             }
             var answers: [UIImage] = []
-            for _ in 0...2 {
+            while answers.count < 3 {
                 let randomInt = Int(arc4random_uniform(UInt32(tempFamilies.count)))
-                let answerImage = tempFamilies[randomInt].image!
+                guard let answerImage = tempFamilies[randomInt].image else { continue }
                 answers.append(answerImage)
             }
             let correctAnswerIndex = Int(arc4random_uniform(4))
@@ -163,10 +163,19 @@ class Challenge: NSObject {
         } else {
             let text = "Семейство \(randomFamily.name)"
             var answers: [UIImage] = []
-            for _ in 0...2 {
-                let randomInt = Int(arc4random_uniform(UInt32(tempFamilies.count)))
-                let answerImage = tempFamilies[randomInt].image!
-                answers.append(answerImage)
+            while answers.count < 3 {
+                let randomFamilyInt = Int(arc4random_uniform(UInt32(tempFamilies.count)))
+                let randomFamily = tempFamilies[randomFamilyInt]
+                if let types = randomFamily.types {
+                    let randomTypeInt = Int(arc4random_uniform(UInt32(types.count)))
+                    let randomType = types[randomTypeInt]
+                    guard let randomFormula = randomFamily.typeImages![randomType] else { continue }
+                    answers.append(randomFormula)
+                } else {
+                    guard let answerImage = randomFamily.image else { continue }
+                    answers.append(answerImage)
+                }
+                
             }
             let correctAnswerIndex = Int(arc4random_uniform(4))
             answers.insert(randomFamily.image!, at: correctAnswerIndex)

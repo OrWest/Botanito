@@ -23,7 +23,9 @@ class AnswerTableViewCell: UITableViewCell {
         questionLabel.text = answer.question.text
         correctImage.image = answer.question.answers[answer.question.correctAnswerIndex]
         answeredImage.image = answer.question.answers[answer.answeredIndex]
-        answeredImage.backgroundColor = answer.answerCorrect ? UIColor.green : UIColor.red
+        let answerColor = answer.answerCorrect ? UIColor.green : UIColor.red
+        questionLabel.textColor = answerColor
+        answeredImage.backgroundColor = answerColor
         
     }
 

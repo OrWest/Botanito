@@ -14,6 +14,7 @@
 		9715138A1E055F3200CEB39D /* FormulaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971513891E055F3200CEB39D /* FormulaQuestion.swift */; };
 		971CE62C1E0C710100155787 /* FormulaAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62B1E0C710100155787 /* FormulaAnswer.swift */; };
 		971CE62E1E0C75B400155787 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */; };
+		971CE6301E0C885400155787 /* Notification+project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62F1E0C885400155787 /* Notification+project.swift */; };
 		975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4CE1E0341EE006FA9EB /* Assets.xcassets */; };
 		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
 		975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* MainViewController.swift */; };
@@ -42,6 +43,7 @@
 		971513891E055F3200CEB39D /* FormulaQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaQuestion.swift; sourceTree = "<group>"; };
 		971CE62B1E0C710100155787 /* FormulaAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaAnswer.swift; sourceTree = "<group>"; };
 		971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		971CE62F1E0C885400155787 /* Notification+project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+project.swift"; sourceTree = "<group>"; };
 		9758C71F1E0345AD00EF7864 /* Botanito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Botanito.entitlements; sourceTree = "<group>"; };
 		975BE4CE1E0341EE006FA9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975BE4D01E0341EE006FA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				976DE3891E073B140061241E /* UIImage+util.swift */,
 				97CC220C1E0B29F5001A6F42 /* Array+shuffle.swift */,
+				971CE62F1E0C885400155787 /* Notification+project.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				976DE38A1E073B140061241E /* UIImage+util.swift in Sources */,
 				97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */,
 				97FA120A1E04406500ED5493 /* BaseViewController.swift in Sources */,
+				971CE6301E0C885400155787 /* Notification+project.swift in Sources */,
 				975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */,
 				97FA12081E043C1400ED5493 /* FormulaViewController.swift in Sources */,
 				971CE62E1E0C75B400155787 /* AnswerTableViewCell.swift in Sources */,

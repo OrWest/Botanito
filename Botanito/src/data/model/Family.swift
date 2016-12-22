@@ -45,16 +45,21 @@ class Family: NSObject {
                         print(error!)
                         return
                     }
-                    self?.typeImages![type] = UIImage(data: data!)
+                    self!.typeImages![type] = UIImage(data: data!)
+                    if self!.typeImages!.keys.count == self!.types?.count {
+                        NotificationCenter.default.post(name: .FamilyLoaded, object: nil, userInfo: ["family" : self!])
+                    }
                 }
             }
         } else {
             storageRef.child("\(name).png").data(withMaxSize: 1 * 1024 * 1024) { [weak self] data, error in
+                
                 guard error == nil else {
                     print(error!)
                     return
                 }
                 self?.image = UIImage(data: data!)
+                NotificationCenter.default.post(name: .FamilyLoaded, object: nil, userInfo: ["family" : self!])
             }
         }
     }
