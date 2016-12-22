@@ -333,7 +333,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "exit;\nGOOGLE_APP_ID=1:785115476344:ios:02873d282729f366\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/Botanito/supported/GoogleKey\"";
+			shellScript = "GOOGLE_APP_ID=1:785115476344:ios:02873d282729f366\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}/Botanito/supported/GoogleKey\"";
 		};
 		A7F412C69A49481728F8C870 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
