@@ -31,6 +31,7 @@ class FormulaViewController: BaseViewController, UIGestureRecognizerDelegate {
         }
         
         prepareNextQuestion()
+        Analytics.StartChallenge(challenge: challenge!)
     }
 
     

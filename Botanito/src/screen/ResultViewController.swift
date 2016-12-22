@@ -22,6 +22,8 @@ class ResultViewController: UIViewController, UITableViewDataSource {
         let correctAnsweredPercent = Int(challenge!.correctAnsweredInPrecent * 100)
         correctAnswerCountLabel.text = "\(correctAnsweredPercent) %"
         resultLabel.text = challenge!.accepted ? "ТЕСТ ПРОЙДЕН!" : "ТЕСТ ПРОВАЛЕН!"
+        
+        Analytics.EndChallenge(challenge: challenge!)
     }
     
 

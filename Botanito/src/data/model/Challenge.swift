@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ChallengeType {
+enum ChallengeType: String {
     case Survival
     case Infinity
 }
@@ -18,6 +18,7 @@ class Challenge: NSObject {
     var answeredCount = 0
     let questionCount: Int
     var answers: [FormulaAnswer]
+    let challengeType: ChallengeType
 
     var correctAnsweredInPrecent: Float {
         get {
@@ -32,9 +33,9 @@ class Challenge: NSObject {
     }
     
     
-    private let challengeType: ChallengeType
     private var questions: [FormulaQuestion]
     private let families: [Family]
+    private var challengeTime: TimeInterval = 0
     
     
     required init(families: [Family], challengeType: ChallengeType) {
@@ -62,6 +63,7 @@ class Challenge: NSObject {
     }
     
     func answer(question: FormulaQuestion, answerIndex: Int) -> Bool {
+        Analytics.answer(question: question, answerIndex: answerIndex)
         answeredCount += 1
         
         var correct = false

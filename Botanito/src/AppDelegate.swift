@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         dataManager = DataManager()
+        Analytics.AppLaunched()
         
         return true
     }

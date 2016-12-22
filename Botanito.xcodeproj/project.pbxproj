@@ -15,6 +15,7 @@
 		971CE62C1E0C710100155787 /* FormulaAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62B1E0C710100155787 /* FormulaAnswer.swift */; };
 		971CE62E1E0C75B400155787 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */; };
 		971CE6301E0C885400155787 /* Notification+project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE62F1E0C885400155787 /* Notification+project.swift */; };
+		971CE6321E0C8B5500155787 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE6311E0C8B5500155787 /* Analytics.swift */; };
 		975BE4DA1E0341EE006FA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975BE4CE1E0341EE006FA9EB /* Assets.xcassets */; };
 		975BE4DB1E0341EE006FA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D01E0341EE006FA9EB /* AppDelegate.swift */; };
 		975BE4DE1E0341EE006FA9EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975BE4D61E0341EE006FA9EB /* MainViewController.swift */; };
@@ -44,6 +45,7 @@
 		971CE62B1E0C710100155787 /* FormulaAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaAnswer.swift; sourceTree = "<group>"; };
 		971CE62D1E0C75B400155787 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		971CE62F1E0C885400155787 /* Notification+project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+project.swift"; sourceTree = "<group>"; };
+		971CE6311E0C8B5500155787 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		9758C71F1E0345AD00EF7864 /* Botanito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Botanito.entitlements; sourceTree = "<group>"; };
 		975BE4CE1E0341EE006FA9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		975BE4D01E0341EE006FA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				97FB00C11E0533EF00D2F4B3 /* DataManager.swift */,
+				971CE6311E0C8B5500155787 /* Analytics.swift */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				9715138A1E055F3200CEB39D /* FormulaQuestion.swift in Sources */,
 				971CE62C1E0C710100155787 /* FormulaAnswer.swift in Sources */,
 				97CC220D1E0B29F5001A6F42 /* Array+shuffle.swift in Sources */,
+				971CE6321E0C8B5500155787 /* Analytics.swift in Sources */,
 				97FB00C21E0533EF00D2F4B3 /* DataManager.swift in Sources */,
 				976DE38A1E073B140061241E /* UIImage+util.swift in Sources */,
 				97FB00C61E053A0700D2F4B3 /* Family.swift in Sources */,
